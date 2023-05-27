@@ -1,7 +1,10 @@
 public class Person {
 
-public enum Gender { MAN, WOMAN };	
-private Gender gender;
+	public enum Gender {
+		MAN, WOMAN
+	};
+
+	private Gender gender;
 
 	public Person(Gender gender) {
 		this.gender = gender;
@@ -11,12 +14,12 @@ private Gender gender;
 		switch (gender) {
 			case MAN:
 				System.out.println("I'm a man");
-break;
+				break;
 			case WOMAN:
 				System.out.println("I'm a woman");
-break;
-default:
-}
+				break;
+			default:
+		}
 	}
 
 	public static void main(String[] args) {
@@ -27,5 +30,3 @@ default:
 		woman.speak();
 	}
 }
- 
- 

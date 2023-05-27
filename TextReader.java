@@ -20,8 +20,7 @@ public class TextReader {
 	private void execute() {
 		List<Integer> valueList = new ObjectList<>();
 
-		try (FileReader fr = new FileReader(path);
-            BufferedReader br = new BufferedReader(fr)) {
+		try (FileReader fr = new FileReader(path); BufferedReader br = new BufferedReader(fr)) {
 			String line = null;
 			while ((line = br.readLine()) != null) {
 				valueList.add(Integer.parseInt(line));
@@ -30,7 +29,7 @@ public class TextReader {
 			e.printStackTrace();
 		}
 
-		for (int value:valueList) {
+		for (int value : valueList) {
 			System.out.println(value);
 		}
 	}

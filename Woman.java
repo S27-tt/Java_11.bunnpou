@@ -1,6 +1,6 @@
-public class Woman extends AbstractPerson{
+public class Woman extends AbstractPerson {
     @Override
-    protected String getGender(){
+    protected String getGender() {
         return "woman";
     }
 }

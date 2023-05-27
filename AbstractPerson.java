@@ -1,7 +1,7 @@
-public abstract class AbstractPerson{
-    abstract protected String getGender();
+public abstract class AbstractPerson {
+    protected abstract String getGender();
 
-    public void speak(){
+    public void speak() {
         System.out.println("I'm a " + getGender());
     }
 }
