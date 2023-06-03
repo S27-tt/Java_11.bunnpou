@@ -12,13 +12,13 @@ public class Person {
 
 	public void speak() {
 		switch (gender) {
-			case MAN:
-				System.out.println("I'm a man");
-				break;
-			case WOMAN:
-				System.out.println("I'm a woman");
-				break;
-			default:
+		case MAN:
+			System.out.println("I'm a man");
+			break;
+		case WOMAN:
+			System.out.println("I'm a woman");
+			break;
+		default:
 		}
 	}
 
